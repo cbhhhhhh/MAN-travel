@@ -17,3 +17,4 @@ def kimi_chat_view(request):
         return HttpResponse(response, content_type="text/plain")
     else:
         return JsonResponse({"error": "仅支持 POST 请求"}, status=405)
+        
